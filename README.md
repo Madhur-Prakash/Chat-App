@@ -54,10 +54,17 @@ npm run build
 ```
 
 
-4. **Start the development server:**
+4. **Start the frontend server:**
 ```bash
-npm start
+cd frontend
+npm run dev
 ```
+5. **Start the backend server:**
+```bash
+cd backend
+npm run dev
+```
+
 5. **Access the application: Open your browser and navigate to:**
 ```plaintext
 http://localhost:5173
