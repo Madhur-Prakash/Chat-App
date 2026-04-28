@@ -1,8 +1,9 @@
 import { config } from "dotenv";
+import { fileURLToPath } from "url";
 import { connectDB } from "../lib/db.js";
 import User from "../models/user.model.js";
 
-config();
+config({ path: fileURLToPath(new URL("../../.env", import.meta.url)) });
 
 const seedUsers = [
   // Female Users
