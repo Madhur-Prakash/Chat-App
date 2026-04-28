@@ -18,6 +18,17 @@ const Sidebar = () => {
     ? users.filter((user) => onlineUsers.includes(user._id))
     : users;
 
+  const sortedUsers = [...filteredUsers].sort((userA, userB) => {
+    const userAOnline = onlineUsers.includes(userA._id);
+    const userBOnline = onlineUsers.includes(userB._id);
+
+    if (userAOnline !== userBOnline) {
+      return userAOnline ? -1 : 1;
+    }
+
+    return userA.fullName.localeCompare(userB.fullName);
+  });
+
   if (isUsersLoading) return <SidebarSkeleton />;
 
   return (
@@ -43,7 +54,7 @@ const Sidebar = () => {
       </div>
 
       <div className="overflow-y-auto w-full py-3">
-        {filteredUsers.map((user) => (
+        {sortedUsers.map((user) => (
           <button
             key={user._id}
             onClick={() => setSelectedUser(user)}
@@ -77,7 +88,7 @@ const Sidebar = () => {
           </button>
         ))}
 
-        {filteredUsers.length === 0 && (
+        {sortedUsers.length === 0 && (
           <div className="text-center text-zinc-500 py-4">No online users</div>
         )}
       </div>
