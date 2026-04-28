@@ -18,7 +18,6 @@ const __dirname = path.resolve();
 
 // Initialize socket server after env is loaded so it can see env vars
 const allowedOrigins = ["http://localhost:5173"];
-if (process.env.FRONTEND_DEV_URL) allowedOrigins.push(process.env.FRONTEND_DEV_URL);
 
 const { app, server } = createSocketServer(allowedOrigins);
 
