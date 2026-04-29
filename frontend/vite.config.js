@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     allowedHosts: true,
+    host: true, // required to make the server accessible via the localtunnel URL
+    port: 5173, // required to match the port used in the localtunnel command
     proxy: {
       '/api': {
         target: 'http://localhost:5001',
