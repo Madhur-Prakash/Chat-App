@@ -3,10 +3,10 @@
 module.exports = {
   apps: [
     {
-      name: "frontend",
-      script: "npm",
-      args: "run dev",
-      cwd: "/home/madhur/chat_app/frontend",
+    name: "frontend",
+    script: "serve",
+    args: "-s dist -l 5173",
+    cwd: "/home/madhur/chat_app/frontend",
     },
     {
       name: "backend",
