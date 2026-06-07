@@ -6,7 +6,7 @@ A **real-time chat application** that allows users to seamlessly communicate wit
 
 ## Live Demo
 
-Check out Chatty: [https://chatty.shares.zrok.io/](https://chatty.shares.zrok.io/)
+Check out Chatty: [https://chatty.share.zrok.io/](https://chatty.share.zrok.io/)
 
 ## 🚀 Features
 
@@ -74,7 +74,7 @@ npm run dev
 http://localhost:5173
 ```
 
-- **Live demo / Hosted project:** Visit https://chatty.shares.zrok.io/
+- **Live demo / Hosted project:** Visit https://chatty.share.zrok.io/
 
 ## 🌟 Acknowledgements
 Special thanks to the developer community for their tutorials, documentation, and open-source projects, which were a constant source of learning and inspiration.
