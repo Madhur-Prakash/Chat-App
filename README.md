@@ -4,6 +4,10 @@ A **real-time chat application** that allows users to seamlessly communicate wit
 
 ---
 
+https://github.com/user-attachments/assets/9eeaef97-1a6f-40ea-9241-970c3e1a850d
+
+---
+
 ## Live Demo
 
 Check out Chatty: [https://chatty.share.zrok.io/](https://chatty.share.zrok.io/)
