@@ -84,3 +84,10 @@ http://localhost:5173
 Special thanks to the developer community for their tutorials, documentation, and open-source projects, which were a constant source of learning and inspiration.
 
 If you have any feedback or suggestions to improve this project, feel free to open an issue or contribute via pull requests.
+
+---
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
